@@ -4,6 +4,7 @@ total_bill = float(input("Total bill amount? "))
 service_level = input("Level of service - good, fair, or bad? ")
 tip = 0
 
+# calculate tip based off user input
 if service_level == "good":
     tip = total_bill * .20
 elif service_level == "fair":
@@ -11,10 +12,11 @@ elif service_level == "fair":
 elif service_level == "bad":
     tip = total_bill * .10
 
-# format tip and bill to dollar amount
+# format tip and bill to dollar amount and calculate total bill including tip
 format_tip = '%.2f' % tip
 total_bill += tip
 format_total_bill = '%.2f' % total_bill
 
+# display formatted output
 print(f"Tip amount: ${format_tip}")
 print(f"Total amount: ${format_total_bill}")
