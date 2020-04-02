@@ -8,4 +8,4 @@ box_width = ("*" * width)
 #have to offset width by 2 in order for dimensions to match
 box_height = ("*" + (" " * (width - 2)) + "*\n") #add newline here instead of final format string
 # display box
-print(f"{box_width}\n{(box_height * height)}{box_width}") 
+print(f"{box_width}\n{(box_height * (height - 2))}{box_width}") 
