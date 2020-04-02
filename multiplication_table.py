@@ -1,5 +1,5 @@
 # print multiplication table for numbers 1-10
-# create initial values and set them equal to 1
+# create initial values and set them equal to 1 because we don't want to multiply by 0
 first_val = 1
 second_val = 1
 
